@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Luxurious Roman', cursive;
+    /* background-color: #22333b;
+    background-color: linear-gradient(#fdffb6,#22333b,50%); */
+    background: radial-gradient(#43cea2,#185a9d);
+    color:black ;
+    font: 2rem;
+    line-height: 2.5rem;
+   
+}
+.card-container{
+    background-color: #02c39a;
+    display: flex;
+    margin-block-start: 22vh;
+    margin-block-end: 20vh;
+    border-radius: 21px;
+    margin-inline: auto;
+    width: 95rem;
+}
+.card-heading{
+    padding-bottom:3rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    width: 51.5%;
+    padding: 6rem 8.3rem 6rem 6rem;
+}
+.card-description{
+    color: #f0ead2;
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.em{
+    color: #f0ead2;
+    font-style: normal;
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.stat-heading {
+    color: #f0ead2;
+    font-size: 2.4rem;
+    font-weight: 700;
+    
+}
+  
+.stat-item{
+    display: block;
+    font-size: 1.5rem;
+    /* font-family: "Lexend Deca"; */
+    text-transform: uppercase;
+    color: #f0ead2;
+  }
+  
+.card-img {
+    display: flex;
+    width: 48.5%;
+    background-color: #f0ead2;
+    filter: saturate(250%) brightness(75%) contrast(125%);
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+  
+img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0.8rem 0.8rem 0;
+    opacity: 0.6;
+  }
+.attribution{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 12em;
+      color: #f0ead2;
+      font-size: 2em;
+    }
+@media only screen and (min-width:1000px){
+    body{
+        overflow: hidden;
+    }
+}
+
+  /*  MOBILE VIEW */
+
+
+@media only screen and (max-width: 768px) {
+    .card-container {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 87%;
+    }
+  
+    .card-img, img {
+      width: 100%;
+      border-radius: 0.8rem 0.8rem 0 0;
+    }
+  
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding: 5rem 3rem 0 3rem;
+    }
+  
+    .card-description {
+      padding-bottom: 5rem;
+    }
+  
+  
+    .stats, .stat-heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 4rem;
+    }
+  
+    .stat-item{
+      padding-top: 1rem;
+    }
+  }
